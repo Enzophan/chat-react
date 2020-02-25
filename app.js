@@ -13,6 +13,7 @@ app.get('/driver', function (req, res) {
     res.sendFile(__dirname + '/driver.html');
 });
 
+// Test
 io.on('connection', function (socket) {
     connections.push(socket);
     console.log('Connected: %s sockets connected', connections.length);
