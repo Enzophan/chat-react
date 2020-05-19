@@ -30,7 +30,8 @@ io.on('connection', (socket) => {
         io.to(user.room).emit('roomData', { room: user.room, users: getUsersInRoom(user.room) });
         callback();
     })
-
+    
+    // Test with reactapptest\react-realtime> 
     // socket.on('editBooking', (message, callback) => {
     //     console.log("Edit booking ", message);
     //     const user = getUser(socket.id);
