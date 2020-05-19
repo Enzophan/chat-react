@@ -31,6 +31,13 @@ io.on('connection', (socket) => {
         callback();
     })
 
+    // socket.on('editBooking', (message, callback) => {
+    //     console.log("Edit booking ", message);
+    //     const user = getUser(socket.id);
+    //     io.to(user.room).emit('editBookingResult', { user: user.name, bookId: message.bookId, status: message.status });
+    //     callback();
+    // })
+
     socket.on('disconnect', () => {
 
         const user = removeUser(socket.id);
